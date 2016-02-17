@@ -15,7 +15,7 @@
 
     $app->get("/game", function() use ($app) {
         $my_game = new Game;
-        $winner = $my_game->threeTwoOne($_GET['player-one'], 'rock');
+        $winner = $my_game->threeTwoOne($_GET['player-one']);
         if ($winner == 'player 1') {
             $message_type = 'success';
             $message_text = 'You have triumphed over computer!';
