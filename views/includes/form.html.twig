@@ -1,9 +1,10 @@
 {% if form %}
-  <form action='' method=''>
+  <form action='/game'>
     <div class="form-group">
-      <label for=''></label>
-      <input name='' id='' type='text' class='form-control'>
+      <label for=''>Three... Two... One...</label>
     </div>
-    <button type='submit' class='btn btn-success'>Submit</button>
+    <button type='submit' class='btn btn-success' name='player-one' value='rock'>Rock</button>
+    <button type='submit' class='btn btn-success' name='player-one' value='paper'>Paper</button>
+    <button type='submit' class='btn btn-success' name='player-one' value='scissors'>Scissors</button>
   </form>
 {% endif %}
