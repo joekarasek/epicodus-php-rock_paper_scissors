@@ -16,5 +16,44 @@
             // Assert
             $this->assertEquals('tie', $result);
         }
+        function test_threeTwoOne_rockBeatsScissors()
+        {
+            // Arrange
+            $test_Game = new Game;
+            $input = 'scissors';
+            $input2 = 'rock';
+
+            // Act
+            $result = $test_Game->threeTwoOne($input , $input2);
+
+            // Assert
+            $this->assertEquals('player 2', $result);
+        }
+        function test_threeTwoOne_scissorsBeatsPaper()
+        {
+            // Arrange
+            $test_Game = new Game;
+            $input = 'paper';
+            $input2 = 'scissors';
+
+            // Act
+            $result = $test_Game->threeTwoOne($input , $input2);
+
+            // Assert
+            $this->assertEquals('player 2', $result);
+        }
+        function test_threeTwoOne_paperBeatsRock()
+        {
+            // Arrange
+            $test_Game = new Game;
+            $input = 'paper';
+            $input2 = 'rock';
+
+            // Act
+            $result = $test_Game->threeTwoOne($input , $input2);
+
+            // Assert
+            $this->assertEquals('player 1', $result);
+        }
     }
  ?>
